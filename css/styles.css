@@ -651,7 +651,8 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand {
-	font-size: 0;
+	font-size: 1.3rem;
+	text-decoration: none;
 }
 
 .navbar-custom .navbar-brand.logo-image img {
@@ -681,8 +682,8 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .nav-item .nav-link:hover,
-.navbar-custom .nav-item .nav-link.active {
-	color: #14bf98;
+.navbar-custom .nav-item .nav-link:active {
+	color: #14bf98 !important;
 }
 
 /* Dropdown Menu */
@@ -690,6 +691,12 @@ input[type='checkbox'] {
 	display: block; /* this makes the dropdown menu stay open while hovering it */
 	min-width: auto;
 	animation: fadeDropdown 0.2s; /* required for the fade animation */
+}
+
+.apply-now_btn {
+	color: #008e6a!important;
+	
+	
 }
 
 @keyframes fadeDropdown {
@@ -721,6 +728,8 @@ input[type='checkbox'] {
 .navbar-custom .dropdown-item:hover {
 	background-color: #113448;
 }
+
+
 
 .navbar-custom .dropdown-item .item-text {
 	font: 600 0.875rem/0.875rem "Open Sans", sans-serif;
@@ -772,8 +781,9 @@ input[type='checkbox'] {
 /*    04. Header     */
 /*********************/
 .header {
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/bgHeader.jpeg') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('../images/bgHeader.jpeg') center center no-repeat;
 	background-size: cover;
+	max-height: 100vh;
 }
 
 .header .header-content {
@@ -1056,10 +1066,11 @@ input[type='checkbox'] {
 /*     09. Details 2     */
 /*************************/
 .tabs .tabs-container {
-	max-width: 90%;
+	max-width: 95%;
 	margin-right: auto;
 	margin-left: auto;
-	padding-top: 2rem;
+	padding-top: 1rem;
+	min-height: 95vh;
 	padding-bottom: 5.75rem;
 }
 
@@ -1135,28 +1146,28 @@ input[type='checkbox'] {
 }
 
 .tabs #tab-2 .list-unstyled .media {
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
 }
 
 .tabs #tab-2 .list-unstyled .media-bullet {
 	color: #14bf98;
 	font-weight: 600;
-	font-size: 2rem;
-	line-height: 2rem;
+	font-size: 1.2rem;
+	line-height: 1rem;
 }
 
 .tabs #tab-2 .list-unstyled .media-body {
-	margin-left: 0.875rem;
+	margin-left: 0.4rem;
 }
 
 .tabs #tab-3 .list-unstyled .fas {
 	color: #14bf98;
-	font-size: 0.5rem;
-	line-height: 1.375rem;
+	font-size: 0.3rem;
+	line-height: .8rem;
 }
 
 .tabs #tab-3 .list-unstyled .media-body {
-	margin-left: 0.625rem;
+	margin-left: 0.4rem;
 }
 
 .tabs #tab-3 .list-unstyled {
@@ -1839,6 +1850,313 @@ a:hover.back-to-top {
 }
 
 
+
+
+
+
+/* apply section */
+.apply-now {
+	margin: 4rem 0;
+}
+.apply-now h1 {
+	font-size: 1.4rem;
+	text-align: center;
+	color:#13aa87;
+}
+
+.apply-now form{
+	padding: 5% !important;
+	
+}
+.apply-now label {
+	font-weight: 600;
+	color:#262b2f;
+}
+
+.apply-button {
+	background-color: #13aa87;
+	color: #fff;
+	font-weight: 600;
+}
+
+.courses-container {
+	margin:  7% 0 6% 0;
+}
+.courses-container h1 {
+	text-align: center;
+	font-weight: 400;
+	margin-bottom: 1.3rem;
+}
+.services-title h1 {
+	text-align: center;
+	font-weight: 100;
+	margin-top: 1.8rem;
+
+}
+.contact_us {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 20vh;
+	background-color:#112222;
+	margin: 10% 0;
+	color: #fff;
+}
+.contact_us span>a{
+	color: #fff;
+	text-decoration: none;
+
+}
+
+.contact_us span>a:hover{
+	color:#e0e0e0;
+	font-weight: 700;
+	font-style: italic;
+	text-decoration: underline;
+	
+}
+
+
+/* tender section */
+.tender-container {
+	margin: 3% 0;
+}
+.tender-info-container {
+	display: flex;
+	width: 100%;
+	height: 10%;
+	border-top: 1px solid #3e6257;
+	border-bottom: 1px solid #3e6257;
+	background-color: #eeeeee;
+	color: #212121;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 2%;
+	padding-right: 1%;
+
+}
+.tenders-title h1 {
+	text-align: center;
+	font-weight: 200;
+	margin-top: 3rem;
+
+}
+.tender-info-container .columns {
+	height: 100%;
+	margin: 1% 0;
+
+
+}
+.tender-info-container .columns .first {
+	width: 10%;
+	
+
+}
+.tender-info-container .columns .second {
+	width: 10%;
+
+}
+.tender-info-container .columns .third {
+	width: 80%;
+
+}
+.tender-info-container .columns .fourth {
+	width: 10%;
+
+}
+
+.tender-info-container .fourth > img {
+	width: 15%;
+	height: 10%;
+	float: right;
+
+}
+
+.tender-info-container .columns span {
+	background-color: #b93636;
+	padding: 10%;
+	border-radius: 10%;
+	display: inline-block;
+	color: #fff;
+
+}
+
+.tender-info-container .columns.open span {
+	background-color:#14bf98;
+	padding: 10%;
+	border-radius: 10%;
+	display: inline-block;
+	color: #fff;
+
+}
+
+/* about section */
+.mission-vission ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.mission-vission ul>:first-child{
+	color: #14bf98;
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.7rem;
+	margin-bottom: 1rem;
+}
+
+.objectives-association ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 3rem;
+}
+.objectives-association ul>li>i {
+	color:#14bf98;
+	font-size: .8rem;
+	
+	
+}
+.objectives-association h2 {
+	font-weight: 100;
+	padding: 1rem;
+
+}
+.applynow {
+	position:fixed;
+	top: 20%;
+	right: 1%;
+	background-color: #14bf98;
+	
+	z-index: 3;
+}
+
+.applynow a{
+	color: #fff!important;
+	text-decoration: none;
+
+}
+
+/* late correction section */
+
+/* ******************************
+			services
+********************************* */
+h2.serivces-title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 1.4rem;
+	margin-bottom: 2rem;
+}
+
+.description-services {
+	background-color: #f5f5f5;
+}
+
+.fa-stack {
+	display: block;
+	margin: 0 auto;
+}
+
+.about-section-intro {
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+}
+.about-section-intro h1 {
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.5rem;
+	color: #14bf98;
+}
+
+.about-description-content {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+}
+.about-section-intro p {
+	width: 100%;
+	
+}
+.identity-header-title ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+}
+.identity-header-title ul>li:first-child {
+	color: #14bf98;
+	font-size: 1.5rem;
+	margin: 1rem 0;
+	
+
+}
+.identity-header-title ul li {
+	line-height: 2rem;
+
+}
+
+.objectives-association ul {
+	/* width: 95%; */
+	margin: 0 auto;
+}
+.objectives-association ul li {
+	line-height: 2rem;
+}
+
+/* riti registered businesse */
+.courses-container h1 {
+	font-size: 1.5rem;
+	color:#14bf98 ;
+}
+.courses-container .card-title {
+	font-size: .9rem;
+	color:#14bf98 ;
+	font-weight: 300;
+}
+
+button.homeScreenButton {
+	width: 100%;
+	padding: 1rem;
+	position: relative;
+	bottom: 0;
+	color: #fff;
+	background-color: #14bf98;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* end of late corretion section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*****************************/
 /*     21. Media Queries     */
 /*****************************/	
@@ -1942,18 +2260,15 @@ a:hover.back-to-top {
 
 	/* Details 2 */
 	.tabs .tabs-container {
-		max-width: 70%;
+		max-width: 96%;
 	}
 
 	.tabs #tab-2 .list-unstyled {
 		display: inline-block;
-		width: 45%;
+		width: 48%;
 		margin-top: 0;
 	}
 	
-	.tabs #tab-2 .list-unstyled.first {
-		margin-right: 2rem;
-	}
 	/* end of details 2 */
 
 
@@ -2280,8 +2595,8 @@ a:hover.back-to-top {
 	
 	/* Header */
 	.header .header-content {
-		padding-top: 14.75rem;
-		padding-bottom: 17.5rem;
+		padding-top: 4rem;
+		padding-bottom: 4rem;
 	}
 	/* end of header */
 
@@ -2332,8 +2647,9 @@ a:hover.back-to-top {
 
 	/* Details 2 */
 	.tabs .tabs-container {
-		max-width: 28rem;
-		margin-right: 5rem;
+		padding-top: 1.4rem;
+		max-width: 35rem;
+		margin-right: 2rem;
 		margin-left: auto;
 	}
 
@@ -2445,3 +2761,27 @@ a:hover.back-to-top {
 	/* end of navigation */
 }
 /* end of min-width width 1200px */
+
+@media (max-width:700px) {
+	.text-container h1 {
+		font-size: 1rem;
+	}
+	.p-large {
+		display: none;
+	}
+	/* .scroll-x {
+		overflow-y: hidden;
+		width: 50rem;
+		overflow-x: scroll;
+		white-space: nowrap;
+	} */
+	.tender-info-container .first {
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+	}
+}
+@media (max-width:464px) {
+	.area-1 .nav-link {
+		font-size: .6rem!important;
+	}
+}

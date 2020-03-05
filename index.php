@@ -58,7 +58,7 @@
                         </span>
                         <div class="card-body">
                             <h4 class="card-title text-center">Employement Opportunities</h4>
-                            <p>Riti Association act as an employment recruitment agency through National Eployment Agency to provide direct or inderect employment and intership opportunities</p>
+                            <p>RITI Association acts as an employment recruitment agency through the National Employment Agency to provide direct or indirect employment and internship opportunities.</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -71,7 +71,7 @@
                         </span>
                         <div class="card-body">
                             <h4 class="card-title text-center">Business Enterprises</h4>
-                            <p>RITI provide business avenues awaiting ready and energetic professionals to act as directors. RITI business enterprises accommodate all professionals from various domains</p>
+                            <p>RITI provides business avenues awaiting ready and energetic professionals to act as directors. RITI business enterprises accommodate all professionals from various domains</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -84,7 +84,7 @@
                         </span>
                         <div class="card-body">
                             <h4 class="card-title text-center">Loans and Youth Funds</h4>
-                            <p>Riti Association will guide Youth on how to access Government Funds and provide them with affordable loans to start income generation projects</p>
+                            <p>RITI Association will guide Youth on how to access Government Funds and provide them with affordable loans to start income generation projects.</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -96,7 +96,7 @@
                         </span>
                         <div class="card-body">
                             <h4 class="card-title text-center">Rehabilitation</h4>
-                            <p>RITI Association through St Nicholas Rehabilitation Center and Nursing Home provides rehabilitation services to achieve high level functional recorvery.  </p>
+                            <p>RITI Association through St Nicholas Rehabilitation Center and Nursing Home provides rehabilitation services to achieve high-level functional recovery.</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -109,7 +109,7 @@
                         </span>
                         <div class="card-body">
                             <h4 class="card-title text-center">Counselling</h4>
-                            <p>RITI association provides counselling sessions that include group counselling, individual therapy and personalized counselling that focus on specific problems </p>
+                            <p>RITI association provides counseling sessions that include group counseling, individual therapy and personalized counseling that focus on specific problems</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -179,38 +179,34 @@
                             </li>
                             <li class="media">
                                 <div class="media-bullet">2</div>
-                                <div class="media-body"><strong></strong> Must be Registed Member through RITI SACCO</div>
+                                <div class="media-body"><strong></strong> Must be Registered Member through RITI SACCO</div>
                             </li>
                             <li class="media">
                                 <div class="media-bullet">3</div>
-                                <div class="media-body"><strong></strong> Must be free from drug alcohol and drug abuse</div>
+                                <div class="media-body"><strong></strong> Must be free from alcoholism and drug abuse</div>
                             </li>
                             <li class="media">
                                 <div class="media-bullet">4</div>
-                                <div class="media-body"><strong></strong> Must be ready to undergo alcohol and drug abuse</div>
+                                <div class="media-body"><strong></strong> Must be ready to undergo a rehabilitation process if battling with alcoholism and drug abuse </div>
                             </li>
                             <li class="media">
                                 <div class="media-bullet">5</div>
-                                <div class="media-body"><strong></strong> Must be ready to undergo rehabilitation process if battling with alcoholism and drug abuse </div>
-                            </li>
-                            <li class="media">
-                                <div class="media-bullet">6</div>
                                 <div class="media-body"><strong></strong>All members must undergo counselling sessions</div>
                             </li>
                         </ul>
                         <ul class="list-unstyled li-space-lg last">
                             
                             <li class="media">
-                                <div class="media-bullet">7</div>
+                                <div class="media-bullet">6</div>
                                 <div class="media-body"><strong></strong> must possess any qualification in diploma, bachelor, masters degree or Ph.D.  in any field</div>
                             </li>
                             <li class="media">
-                                <div class="media-bullet">8</div>
-                                <div class="media-body"><strong></strong> Must possess certificate of good conduct</div>
+                                <div class="media-bullet">7</div>
+                                <div class="media-body"><strong></strong> Must possess a certificate of good conduct</div>
                             </li>
                             <li class="media">
-                                <div class="media-bullet">9</div>
-                                <div class="media-body"><strong></strong> Must be displine, social and ready to work in group</div>
+                                <div class="media-bullet">8</div>
+                                <div class="media-body"><strong></strong> Must be discipline, social and ready to work in a group</div>
                             </li>
         
                         </ul>
@@ -227,6 +223,10 @@
                             <li class="media">
                                 <i class="fas fa-square"></i>
                                 <div class="media-body">RITI Group of Psychiatric Clinics</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">St Nicholas School of Counseling Psychology</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
@@ -385,22 +385,6 @@
                             </li>
                         </ul>
 
-                        <!-- Counter -->
-                        <div id="counter">
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="200">1</div> <br>
-                                <div class="counter-info">Associates</div>
-                            </div>
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="50">1</div><br>
-                                <div class="counter-info">Secured jobs</div>
-                            </div>
-                            <div class="cell">
-                                <div class="counter-value number-count" data-count="15">1</div><br>
-                                <div class="counter-info">Businesses</div>
-                            </div>
-                        </div>
-                        <!-- end of counter -->
 
                     </div> <!-- end of text-container -->      
                 </div> <!-- end of col -->

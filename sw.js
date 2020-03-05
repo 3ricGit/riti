@@ -1,4 +1,4 @@
-const cacheName = 'cache-v2';
+const cacheName = 'cache-v3';
 
 const filesToCache = [
     '/',
@@ -42,12 +42,14 @@ const filesToCache = [
     'images/auto-garage.jpg',
     'images/food%20supply.jpg',
     'images/counselling%202.jpg',
-    'images/psychiatric.jpg'
+    'images/psychiatric.jpg',
+    'images/school-of-counselling.jpg'
 ]
 
 // service workers steps
 // install event
 self.addEventListener('install', (event)=> {
+  self.skipWaiting();
     event.waitUntil(
         caches.open(cacheName)
         .then(cache=> {
@@ -58,9 +60,19 @@ self.addEventListener('install', (event)=> {
 
 // activate event
 
-self.addEventListener('activate', (event)=> {
-    console.log('activate event')
-})
+this.addEventListener('activate', function(event) {
+    var cachesToKeep = ['cache-v3'];
+  
+    event.waitUntil(
+      caches.keys().then(function(keyList) {
+        return Promise.all(keyList.map(function(key) {
+          if (cachesToKeep.indexOf(key) === -1) {
+            return caches.delete(key);
+          }
+        }));
+      })
+    );
+  });
 
 // fetch event
 

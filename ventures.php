@@ -123,6 +123,16 @@
 
   <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
       <div class="card">
+        <img src="./images/school-of-counselling.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">St Nicholas School of Counselling Psychology</h5>
+          <p class="card-text">we focus in providing therapeutic treatments for clients experiencing emotional and social problems</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
+      <div class="card">
         <img src="./images/food supply.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">RITI Food Packaging and Supplies</h5>

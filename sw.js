@@ -1,14 +1,18 @@
-const cacheName = 'cache-v1';
+const cacheName = 'cache-v2';
 
 const filesToCache = [
     '/',
+    'index.php',
+    'contact_us.php',
+    'apply.php',
+    'ventures.php',
+    '/about.php',
     'css/bootstrap.css',
     'css/fontawesome-all.css',
     'css/swiper.css',
     'css/magnific-popup.css',
     'css/styles.css',
     'images/intro.jpeg',
-    'images/work.jpeg',
     'js/jquery.min.js',
     'js/popper.min.js',
     'js/bootstrap.min.js',
@@ -19,27 +23,26 @@ const filesToCache = [
     'js/isotope.pkgd.min.js',
     'js/validator.min.js',
     'js/scripts.js',
+    'images/work.jpeg',
     'images/bgHeader.jpeg',
-    'images/business.jpeg',
     'images/hexagon-green.svg',
+    'images/business.jpeg',
     'images/down-arrow.png',
     'webfonts/fa-solid-900.woff2',
-    'contact_us.php',
-    'apply.php',
-    'ventures.php',
-    'images/group-psychiatric-clinic.jpg',
-    'images/food-clinic.jpg',
-    'images/medical-clinic.jpg',
+    'images/favicon.png',
     'images/laboratory-clinic.jpg',
-    'images/dental-clinic.jpg',
     'images/physio9.jpg',
     'images/construction.jpg',
-    'images/auto-garage.jpeg',
     'images/nurusing-home.jpeg',
     'images/horticulture.jpg',
-    'images/food-packaging.png',
-    'images/uniform.jpg'
-
+    'images/uniform.jpg',
+    'images/medical%20clinic.jpg',
+    'images/food%20and%20diatetic.jpg',
+    'images/dental%20clinic.jpg',
+    'images/auto-garage.jpg',
+    'images/food%20supply.jpg',
+    'images/counselling%202.jpg',
+    'images/psychiatric.jpg'
 ]
 
 // service workers steps

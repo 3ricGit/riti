@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark navbar-custom top-nav-collapse fixed-top">
+<nav id="riti-Navbar" class="navbar navbar-expand-md navbar-dark navbar-custom top-nav-collapse fixed-top">
         <!-- Text Logo - Use this if you don't have a graphic logo -->
         <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
 

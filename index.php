@@ -415,17 +415,7 @@
 
 
 
-    <script>
-
-    if ('serviceWorker' in navigator) {
-        window.addEventListener('load', (event)=> {
-            navigator.serviceWorker.register('/sw.js')
-            .then((reg)=> console.log('registering service worker', reg))
-            .catch(err => console.log('error occured ', err))
-        })
-    }
-    
-    </script>
+   
     <?php require './main/footer.php'; ?>
 
 

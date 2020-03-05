@@ -311,3 +311,10 @@
 	});
 
 })(jQuery);
+
+const [...riti_nav] = document.querySelectorAll('#riti-Navbar li.nav-item a')
+riti_nav.forEach(link=> {
+    link.addEventListener('click', (event)=>{
+        link.classList.add('active')
+    })
+})

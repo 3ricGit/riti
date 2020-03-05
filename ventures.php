@@ -11,7 +11,7 @@
 <div class="courses-container">
 <h1>RITI Registered Businesses</h1>
 <div class="row">
-  <div class="col-sm-12 col-md-3 mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
       <div class="card">
         <img src="./images/counselling 2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
       <div class="card">
         <img src="./images/psychiatric.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
       <div class="card">
         <img src="./images/medical clinic.jpg" class="card-img-top img-fluid" alt="...">
         <div class="card-body">
@@ -41,7 +41,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
       <div class="card">
         <img src="./images/food and diatetic.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -51,7 +51,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
       <div class="card">
         <img src="./images/laboratory-clinic.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -61,7 +61,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
       <div class="card">
         <img src="./images/dental clinic.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -71,7 +71,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
       <div class="card">
         <img src="./images/physio9.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -81,7 +81,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
       <div class="card">
         <img src="./images/construction.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -91,7 +91,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
       <div class="card">
         <img src="./images/auto-garage.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -101,7 +101,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4 mb-4">
       <div class="card">
         <img src="./images/nurusing-home.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -111,7 +111,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
       <div class="card">
         <img src="./images/horticulture.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -121,7 +121,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
       <div class="card">
         <img src="./images/food supply.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -131,7 +131,7 @@
     </div>
   </div>
 
-  <div class="col-sm-12 col-md-3  mb-4">
+  <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
       <div class="card">
         <img src="./images/uniform.jpg" class="card-img-top" alt="...">
         <div class="card-body">

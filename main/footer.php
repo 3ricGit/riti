@@ -74,7 +74,16 @@
     </div> <!-- end of copyright --> 
     <!-- end of copyright -->
 
-    
+    <script>
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', (event)=> {
+        navigator.serviceWorker.register('/sw.js')
+        .catch(err => console.log('error occured ', err))
+    })
+}
+
+</script>
     
     	
     <!-- Scripts -->

@@ -5,7 +5,7 @@
                 <div class="col-md-6">
                     <div class="text-container about">
                         <h4>Few Words About RITI Association</h4>
-                        <p class="white">We're passionate about delivering the best business growth services for companies just starting out as startups or industry players that have established their market position a long tima ago.</p>
+                        <p class="white">We're passionate about delivering the best business growth services for companies just starting out as startups or industry players that have established their market position a long time ago.</p>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
                 <div class="col-md-2">
@@ -35,7 +35,7 @@
                                <a class="white" href="#your-link">Tenders</a>
                             </li>
                             <li class="media">
-                                <a class="white" href="#your-link">Brochures</a>
+                                <a class="white" href="#your-link">Bronchures</a>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Designed by chirchir</a></p>
+                    <p class="p-small">Copyright © 2020 <a href="">Designed by chirchir</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->

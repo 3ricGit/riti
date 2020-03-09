@@ -136,7 +136,7 @@
         <img src="./images/food supply.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">RITI Food Packaging and Supplies</h5>
-          <p class="card-text">We offer cans, bags, pallets and carton food processing and packacking. we also supply all orders</p>
+          <p class="card-text">We offer cans, bags, pallets and carton food processing and packaging. we also supply all orders</p>
         </div>
     </div>
   </div>
@@ -146,7 +146,7 @@
         <img src="./images/uniform.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">RITI Uniform Distributors</h5>
-          <p class="card-text">We take care of your school uniform needs by ensuring that they are avaialable in places closer to you.</p>
+          <p class="card-text">We take care of your school uniform needs by ensuring that they are available in places closer to you.</p>
         </div>
     </div>
   </div>

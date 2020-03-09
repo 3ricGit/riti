@@ -65,10 +65,7 @@
                             <label class="label-control" for="cmessage">Your message</label>
                             <div class="help-block with-errors"></div>
                         </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with RITI's stated <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
+                       
                         <div class="form-group">
                             <button name="contact" type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
                         </div>

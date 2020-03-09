@@ -109,7 +109,7 @@
                         </span>
                         <div class="card-body">
                             <h4 class="card-title text-center">Counselling</h4>
-                            <p>RITI association provides counseling sessions that include group counseling, individual therapy and personalized counseling that focus on specific problems</p>
+                            <p>RITI association provides counseling sessions that include group counselling, individual therapy and personalized counselling that focus on specific problems</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -206,7 +206,7 @@
                             </li>
                             <li class="media">
                                 <div class="media-bullet">8</div>
-                                <div class="media-body"><strong></strong> Must be discipline, social and ready to work in a group</div>
+                                <div class="media-body"><strong></strong> Must be disciplined, social and ready to work in a group</div>
                             </li>
         
                         </ul>

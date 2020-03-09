@@ -63,10 +63,10 @@
               <div class="col-sm-12 identity-header-title">
               <ul>
                       <li>Core Values</li>
-                      <li>Exellence</li>
+                      <li>Excellence</li>
                       <li>Collaboration</li>
                       <li>Integrity</li>
-                      <li>Displine</li>
+                      <li>Discipline</li>
                   </ul>
               </div>
           </div>

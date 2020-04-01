@@ -103,11 +103,12 @@ if ($conn->connect_errno) {
         $instancemail = new PHPMailer;
         $instancemail->isSMTP();                                      // Set mailer to use SMTP
         $instancemail->Host = 'mail.ritiassociation.or.ke';  // Specify main and backup SMTP servers
-        $instancemail->SMTPAuth = true;                               // Enable SMTP authentication
+        $instancemail->SMTPAuth = false;                               // Enable SMTP authentication
         $instancemail->Username = 'application@ritiassociation.or.ke';                 // SMTP username
         $instancemail->Password = 'RehabiliTitationRiti';                           // SMTP password
-        $instancemail->SMTPSecure = 'tls';                          // Enable TLS encryption, `ssl` also accepted
-        $instancemail->Port = 465;                                    // TCP port to connect to
+        $instancemail->SMTPSecure = false;   
+        $instancemail->SMTPAutoTLS= false;                           // Enable TLS encryption, `ssl` also accepted
+        $instancemail->Port = 25;                                    // TCP port to connect to
 
         $instancemail->setFrom($email, $fullname);
         $instancemail->addAddress('application@ritiassociation.or.ke');     // Add a recipient

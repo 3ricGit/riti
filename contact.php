@@ -1,3 +1,13 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<?php require './main/head.php';?>
+</head>
+<body>
+<?php require './main/preloader.html';?>
+<?php require './main/navbar.php';?>
+
 <div id="contact" class="form-2">
         <div class="container">
             <div class="row">
@@ -80,3 +90,8 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form-2 -->
+
+    <?php require './main/footer.php'; ?>
+    
+</body>
+</html>

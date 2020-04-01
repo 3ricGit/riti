@@ -8,7 +8,7 @@
 <?php require './main/navbar.php';?>
 
 <div class="container">
-    <div class="row">
+    <div class="row mt-4">
         <div class="col-12">
             <div class="about-container">
               <div class="about-section-intro">

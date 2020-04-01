@@ -31,7 +31,7 @@
                 <!-- end of dropdown menu -->
 
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="contact_us.php">CONTACT</a>
+                    <a class="nav-link page-scroll" href="contact.php">CONTACT</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="apply.php">APPLY NOW</a>

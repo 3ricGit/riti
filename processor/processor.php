@@ -106,13 +106,12 @@ if ($conn->connect_errno) {
         $instancemail->SMTPAuth = true;                               // Enable SMTP authentication
         $instancemail->Username = 'application@ritiassociation.or.ke';                 // SMTP username
         $instancemail->Password = 'RehabiliTitationRiti';                           // SMTP password
-        $instancemail->SMTPSecure = true;     
-        $instancemail->SMTPAutoTLS = 'tls';                        // Enable TLS encryption, `ssl` also accepted
+        $instancemail->SMTPSecure = 'tls';                          // Enable TLS encryption, `ssl` also accepted
         $instancemail->Port = 465;                                    // TCP port to connect to
 
         $instancemail->setFrom($email, $fullname);
         $instancemail->addAddress('application@ritiassociation.or.ke');     // Add a recipient
-        $instancemail->addAddress('director.ritiassociation@gmail.com');               // Name is optional
+        // $instancemail->addAddress('director.ritiassociation@gmail.com');               // Name is optional
         // $instancemail->addReplyTo('info@example.com', 'Information');
        
 

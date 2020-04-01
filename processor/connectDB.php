@@ -4,7 +4,7 @@ session_start();
 $HOST = 'localhost';
 $USER = 'ritiasso_root';
 $PASSWORD = '^e8.6g[zJ5%.';
-// $DB = 'ritiasso_riti';
+$DB = 'ritiasso_riti';
 // $USER = 'root';
 // $PASSWORD = 'Chirchir1.';
 // $DB = 'riti';

@@ -143,6 +143,16 @@
 
   <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
       <div class="card">
+        <img src="./images/marketing.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Advertising and Marketing Agency</h5>
+          <p class="card-text">We work closely with our clients to gather information and pitch their campaign ideas followed by the creative process of actually making and distributing the ads.</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
+      <div class="card">
         <img src="./images/uniform.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">RITI Uniform Distributors</h5>

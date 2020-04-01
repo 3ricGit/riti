@@ -35,7 +35,7 @@
                                <a class="white" href="#your-link">Tenders</a>
                             </li>
                             <li class="media">
-                                <a class="white" href="#your-link">Bronchures</a>
+                                <a class="white" target="_blank" href="../images/RITI BRONCHURE FINAL.jpg">Flier</a>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -76,12 +76,12 @@
 
     <script>
 
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', (event)=> {
-        navigator.serviceWorker.register('/sw.js')
-        .catch(err => console.log('error occured ', err))
-    })
-}
+// if ('serviceWorker' in navigator) {
+//     window.addEventListener('load', (event)=> {
+//         navigator.serviceWorker.register('/sw.js')
+//         .catch(err => console.log('error occured ', err))
+//     })
+// }
 
 </script>
     

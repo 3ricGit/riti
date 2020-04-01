@@ -8,36 +8,37 @@
                         <p>You can stop by our office or just use the contact form below for any questions and inquiries</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="address"><i class="fas fa-map-marker-alt"></i>2nd Floor, Sunshine Building, Muthaiga Square, Nairobi</li>
-                            <li><i class="fas fa-phone"></i><a href="tel:0715773374">+254715773374</a></li>
+                            <li><i class="fas fa-phone"></i><a href="tel:0715773374">+254740544047</li>
+                            <li><i class="fas fa-phone"></i><a href="tel:0715773374">+254740544057</li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:application@ritiassociation.or.ke">application@ritiassociation.or.ke</a></li>
                             <li><i class="fas fa-envelope"></i><a href="mailto:director.ritiassociation@gmail.com">director.ritiassociation@gmail.com</a></li>
                         </ul>
                         <h3>Follow RITI On Social Media</h3>
 
                         <span class="fa-stack">
-                            <a target="_blank" href="https://www.facebook.com/stnicholasrehab/?view_public_for=103764411216977">
+                            <a target="_blank" href="https://www.facebook.com/ritiassociation/">
                                 <span class="hexagon"></span>
                                 <i class="fab fa-facebook-f fa-stack-1x"></i>
                             </a>
                         </span>
-                        <!-- <span class="fa-stack">
-                            <a href="#your-link">
+                        <span class="fa-stack">
+                            <a target="_blank" href="https://twitter.com/ritiassociation">
                                 <span class="hexagon"></span>
                                 <i class="fab fa-twitter fa-stack-1x"></i>
                             </a>
-                        </span> -->
+                        </span>
                         <span class="fa-stack">
-                            <a target="_blank" href="https://www.instagram.com/rehab.nicholas/">
+                            <a target="_blank" href="https://www.instagram.com/ritiassociation/">
                                 <span class="hexagon"></span>
                                 <i class="fab fa-instagram fa-stack-1x"></i>
                             </a>
                         </span>
-                        <!-- <span class="fa-stack">
-                            <a href="#your-link">
+                        <span class="fa-stack">
+                            <a target="_blank" href="https://www.youtube.com/channel/UCcGMmFEaKa9DxCDvKrEJ67Q">
                                 <span class="hexagon"></span>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                                <i class="fab fa-youtube fa-stack-1x"></i>
                             </a>
-                        </span> -->
+                        </span>
                         
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->

@@ -1,4 +1,4 @@
-const cacheName = 'cache-v7';
+const cacheName = 'cache-12';
 
 const filesToCache = [
     '/',
@@ -36,6 +36,7 @@ const filesToCache = [
     'images/nurusing-home.jpeg',
     'images/horticulture.jpg',
     'images/uniform.jpg',
+    'images/img3.jpeg',
     'images/medical%20clinic.jpg',
     'images/food%20and%20diatetic.jpg',
     'images/dental%20clinic.jpg',
@@ -43,7 +44,11 @@ const filesToCache = [
     'images/food%20supply.jpg',
     'images/counselling%202.jpg',
     'images/psychiatric.jpg',
-    'images/school-of-counselling.jpg'
+    'images/school-of-counselling.jpg',
+    'images/RITIBRONCHUREFINAL.jpg',
+    'images/RITILOGOFINAL(1).png',
+    '/images/marketing.jpg'
+    
 ]
 
 // service workers steps
@@ -61,7 +66,7 @@ self.addEventListener('install', (event)=> {
 // activate event
 
 this.addEventListener('activate', function(event) {
-    var cachesToKeep = ['cache-v7'];
+    var cachesToKeep = ['cache-v12'];
   
     event.waitUntil(
       caches.keys().then(function(keyList) {

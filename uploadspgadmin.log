@@ -1,0 +1,41 @@
+ERROR  : 08:29:47 PM: Error: ERROR:  extension "adminpack" already exists
+ERROR  : 08:30:42 PM: Error: Error connecting to the server: definition of service "postgresql" not found
+
+ERROR  : 09:13:20 PM: Error: Error connecting to the server: FATAL:  password authentication failed for user "chirchir"
+FATAL:  password authentication failed for user "chirchir"
+
+ERROR  : 09:13:45 PM: Error: Error connecting to the server: FATAL:  password authentication failed for user "chirchir"
+FATAL:  password authentication failed for user "chirchir"
+
+ERROR  : 09:20:19 PM: ERROR:  syntax error at or near "USE"
+LINE 1: USE DATABASE blog;
+        ^
+ERROR  : 09:23:25 PM: ERROR:  database "chirchir" already exists
+ERROR  : 04:08:30 PM: Error: Error connecting to the server: FATAL:  Peer authentication failed for user "ictuser"
+
+ERROR  : 04:10:22 PM: Error: Error connecting to the server: FATAL:  Peer authentication failed for user "postgres"
+
+ERROR  : 04:21:03 PM: Error: Error connecting to the server: FATAL:  Peer authentication failed for user "postgres"
+
+ERROR  : 04:27:41 PM: Error: ERROR:  column "min_value" does not exist
+LINE 1: SELECT last_value, min_value, max_value, cache_value, is_cyc...
+                           ^
+ERROR  : 04:27:45 PM: Error: Column not found in pgSet: last_value
+ERROR  : 04:27:51 PM: Error: Column not found in pgSet: min_value
+ERROR  : 11:07:43 AM: Error: ERROR:  update or delete on table "users_user" violates foreign key constraint "users_employee_user_id_6131bb7a_fk_users_user_id" on table "users_employee"
+DETAIL:  Key (id)=(9) is still referenced from table "users_employee".
+ERROR  : 11:09:27 AM: Error: ERROR:  update or delete on table "users_user" violates foreign key constraint "users_employee_user_id_6131bb7a_fk_users_user_id" on table "users_employee"
+DETAIL:  Key (id)=(9) is still referenced from table "users_employee".
+ERROR  : 11:09:35 AM: Error: ERROR:  update or delete on table "users_user" violates foreign key constraint "users_employee_user_id_6131bb7a_fk_users_user_id" on table "users_employee"
+DETAIL:  Key (id)=(9) is still referenced from table "users_employee".
+ERROR  : 08:21:04 AM: Error: ERROR:  update or delete on table "users_user" violates foreign key constraint "users_employee_user_id_6131bb7a_fk_users_user_id" on table "users_employee"
+DETAIL:  Key (id)=(17) is still referenced from table "users_employee".
+ERROR  : 09:53:50 AM: Error: ERROR:  update or delete on table "users_user" violates foreign key constraint "users_employee_user_id_6131bb7a_fk_users_user_id" on table "users_employee"
+DETAIL:  Key (id)=(19) is still referenced from table "users_employee".
+ERROR  : 09:53:56 AM: Error: ERROR:  update or delete on table "users_user" violates foreign key constraint "users_employee_user_id_6131bb7a_fk_users_user_id" on table "users_employee"
+DETAIL:  Key (id)=(19) is still referenced from table "users_employee".
+ERROR  : 03:22:31 PM: Error: ERROR:  update or delete on table "users_user" violates foreign key constraint "users_employee_user_id_6131bb7a_fk_users_user_id" on table "users_employee"
+DETAIL:  Key (id)=(23) is still referenced from table "users_employee".
+ERROR  : 06:50:11 AM: Error: ERROR:  cannot drop table auth_group because other objects depend on it
+DETAIL:  constraint auth_group_permissions_group_id_b120cbf9_fk_auth_group_id on table auth_group_permissions depends on table auth_group
+HINT:  Use DROP ... CASCADE to drop the dependent objects too.

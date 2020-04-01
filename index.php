@@ -14,11 +14,14 @@
     <?php require './main/navbar.php';?>
     <!-- end of navbar -->
 
+    <div class="logo-main-separator"></div>
 
     <!-- Header -->
     <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
+
+    <!-- mobile -->
+    <div class="header-content">
+            <div class="container mobile">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="text-container">
@@ -34,6 +37,19 @@
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
         </div> <!-- end of header-content -->
+
+    
+
+    <!-- desktop -->
+       <div class="logo-container">
+          <div class="logo-image-center">
+              <img  src="./images/RITILOGOFINAL(1).png" alt="logo" class="logo-image">
+
+          </div>
+         <div class="discover-btn">
+         <a class="btn-solid-lg page-scroll" href="#intro">DISCOVER</a>
+         </div>
+       </div>
     </header> <!-- end of header -->
     <!-- end of header -->
 

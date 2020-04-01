@@ -4,7 +4,7 @@
 
         <!-- Image Logo -->
 
-        <a class="navbar-brand" href="#">RITI ASSOCIATION</a>
+        <a class="navbar-brand" href="#"><img src="../images/final.png" alt="logo" style="width: 100%; height:auto;"></a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">

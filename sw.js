@@ -1,4 +1,4 @@
-const cacheName = 'cache-12';
+const cacheName = 'cache-13';
 
 const filesToCache = [
     '/',
@@ -47,45 +47,38 @@ const filesToCache = [
     'images/school-of-counselling.jpg',
     'images/RITIBRONCHUREFINAL.jpg',
     'images/RITILOGOFINAL(1).png',
-    '/images/marketing.jpg'
-    
+    '/images/marketing.jpg',
+    '/images/food.jpeg'
+
 ]
 
 // service workers steps
 // install event
-self.addEventListener('install', (event)=> {
-  self.skipWaiting();
-    event.waitUntil(
-        caches.open(cacheName)
-        .then(cache=> {
-            return cache.addAll(filesToCache)
-        })
-    );
+self.addEventListener('install', (event) => {
+    self.skipWaiting();
+    event.waitUntil(caches.open(cacheName).then(cache => {
+        return cache.addAll(filesToCache)
+    }));
 });
 
 // activate event
 
-this.addEventListener('activate', function(event) {
-    var cachesToKeep = ['cache-v12'];
-  
-    event.waitUntil(
-      caches.keys().then(function(keyList) {
-        return Promise.all(keyList.map(function(key) {
-          if (cachesToKeep.indexOf(key) === -1) {
-            return caches.delete(key);
-          }
+this.addEventListener('activate', function (event) {
+    var cachesToKeep = ['cache-v13'];
+
+    event.waitUntil(caches.keys().then(function (keyList) {
+        return Promise.all(keyList.map(function (key) {
+            if (cachesToKeep.indexOf(key) === -1) {
+                return caches.delete(key);
+            }
         }));
-      })
-    );
-  });
+    }));
+});
 
 // fetch event
 
 self.addEventListener('fetch', (event) => {
-    event.respondWith(caches.match(event.request)
-    .then(cacheResponse => {
+    event.respondWith(caches.match(event.request).then(cacheResponse => {
         return cacheResponse || fetch(event.request)
-    })
-    );
+    }));
 })
-

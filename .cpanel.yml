@@ -3,3 +3,10 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/ritiasso/public_html/
     - /bin/cp * $DEPLOYPATH
+    - /bin/cp -R images $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R main $DEPLOYPATH
+    - /bin/cp -R phpMailer $DEPLOYPATH
+    - /bin/cp -R uploads $DEPLOYPATH
+    - /bin/cp -R processor $DEPLOYPATH

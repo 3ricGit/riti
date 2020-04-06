@@ -133,11 +133,8 @@
 
   <div class="col-sm-12 col-md-4 col-lg-4  mb-4">
       <div class="card">
-        <img src="./images/food supply.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">RITI Food Packaging and Supplies</h5>
-          <p class="card-text">We offer cans, bags, pallets and carton food processing and packaging. we also supply all orders</p>
-        </div>
+        <img src="./images/food.jpeg" class="card-img-top" alt="...">
+       
     </div>
   </div>
 

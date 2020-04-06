@@ -34,8 +34,11 @@
                             <li>
                                <a class="white" href="#your-link">Tenders</a>
                             </li>
+                            <!-- <li>
+                               <a class="white" href="">Certificate of Incorporation</a>
+                            </li> -->
                             <li class="media">
-                                <a class="white" target="_blank" href="../images/RITI BRONCHURE FINAL.jpg">Flier</a>
+                                <a class="white" target="_blank" href="../images/RITIBRONCHUREFINAL.jpg">Flier</a>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->

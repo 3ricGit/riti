@@ -29,7 +29,7 @@
                 violence and insecurity across the continent. 
                </p>
                <p>
-               Simply. Africa is unable to generate enough jobs to accommodate a large number of people graduating from colleges and universities. Due to the high number of unemployment, youth have turned to alcoholism and drug abuse,  robbers, members of terrorist groups and kidnappers, among other vices. Girls have turned to early marriages that are not sustainable, resulting in bringing up fatherless kids hence high risks to HIV/AIDS infection.
+               Simply, Africa is unable to generate enough jobs to accommodate a large number of people graduating from colleges and universities. Due to the high number of unemployment, youth have turned to alcoholism and drug abuse,  robbers, members of terrorist groups and kidnappers, among other vices. Girls have turned to early marriages that are not sustainable, resulting in bringing up fatherless kids hence high risks to HIV/AIDS infection.
                </p>
 
                <p>
@@ -80,7 +80,7 @@
                 <li> <i class="fas fa-square"></i> To provide employment opportunities to unemployed graduates and professionals</li>
                 <li><i class="fas fa-square"></i> To provide guidance and counselling</li>
                 <li> <i class="fas fa-square"></i> To provide career-building through internship opportunities </li>
-                <li> <i class="fas fa-square"></i> To re-group graduates according to their diverse professionalism to initiate various business enterprises as a group</li>
+                <li> <i class="fas fa-square"></i> To re-group graduates according to their diverse professions to initiate various business enterprises as a group</li>
                 <li> <i class="fas fa-square"></i> To prepare graduates and professionals psychologically to have business-oriented minds before employment opportunities come their way</li>
                 <li> <i class="fas fa-square"></i> To act as an agent to secure employment in companies/organizations both locally and internationally for our unemployed graduates</li>
                 <li> <i class="fas fa-square"></i> To guide graduates and youth in general through provisions of affordable loans to start income-generating businesses</li>

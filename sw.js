@@ -1,4 +1,4 @@
-const cacheName = 'cache-15';
+const cacheName = 'cache-16';
 
 const filesToCache = [
     '/',
@@ -65,7 +65,7 @@ self.addEventListener('install', (event) => {
 // activate event
 
 this.addEventListener('activate', function (event) {
-    var cachesToKeep = ['cache-v15'];
+    var cachesToKeep = ['cache-v16'];
 
     event.waitUntil(caches.keys().then(function (keyList) {
         return Promise.all(keyList.map(function (key) {

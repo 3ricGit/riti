@@ -1,4 +1,4 @@
-const cacheName = 'cache-14';
+const cacheName = 'cache-15';
 
 const filesToCache = [
     '/',
@@ -48,7 +48,8 @@ const filesToCache = [
     'images/RITIBRONCHUREFINAL.jpg',
     'images/RITILOGOFINAL(1).png',
     '/images/marketing.jpg',
-    '/images/food.jpeg'
+    '/images/food.jpeg',
+    '/membershipForm.docx'
 
 ]
 
@@ -64,7 +65,7 @@ self.addEventListener('install', (event) => {
 // activate event
 
 this.addEventListener('activate', function (event) {
-    var cachesToKeep = ['cache-v14'];
+    var cachesToKeep = ['cache-v15'];
 
     event.waitUntil(caches.keys().then(function (keyList) {
         return Promise.all(keyList.map(function (key) {

@@ -2861,7 +2861,8 @@ button.homeScreenButton {
 		font-size: 1rem;
 	}
 	.apply-now h1 {
-		font-size: 1rem;
+		font-size: .8rem;
+		line-height: 22px
 	}
 	#header .header-content {
 		display: block;

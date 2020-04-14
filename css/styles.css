@@ -2845,6 +2845,7 @@ button.homeScreenButton {
 	}
 }
 @media (max-width:464px) {
+	
 	.area-1 .nav-link {
 		font-size: 1rem!important;
 	}

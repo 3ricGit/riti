@@ -17,7 +17,7 @@ require './processor/processor.php';
             <div class="col-md-10 col-sm-12 mx-auto">
 
             <div class="apply-now">
-                <h1>Download membership form <a href="./membershipForm.docx">here</a> or  Apply with the following form</h1>
+                <h1>Download membership form <a href="./membershipForm.docx">here</a> and  Apply with the following form</h1>
                 <div class="dropdown-items-divide-hr"></div>
 
             <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>" class="shadow-lg p-3 mb-5  bg-white rounded" enctype="multipart/form-data">

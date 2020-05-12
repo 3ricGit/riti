@@ -21,7 +21,8 @@ require './processor/processor.php';
                 <div class="apply-now">
                     <h1 class="text-left"> Membership Application Process</h1>
                     <ol class="mb-5">
-                        <li>download the <a href=""><b>MEMBERSHIP FORM HERE <i class="fas fa-file-pdf"></i></b></a>
+                        <li>download the <a href="membership.pdf"><b>MEMBERSHIP FORM HERE <i
+                                        class="fas fa-file-pdf"></i></b></a>
                         </li>
                         <li>print the membership form</li>
                         <li>fill all the required fields in the membership form printed</li>

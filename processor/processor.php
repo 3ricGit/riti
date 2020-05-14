@@ -12,11 +12,11 @@ if ($conn->connect_errno) {
 
   // apply
   if (isset($_POST['apply'])) {
-    $path_cv = 'uploads' . $_FILES["cv"]["name"];
+    $path_cv = 'uploads/' . basename($_FILES['cv']['name']);;
     move_uploaded_file($_FILES["cv"]["tmp_name"], $path_cv);
 
-    // $path_membership = 'uploads' . $_FILES["membership"]["name"];
-    // move_uploaded_file($_FILES["membership"]["tmp_name"], $path_membership);
+    $path_membership = 'uploads/' . basename($_FILES["membership"]["name"]);
+    move_uploaded_file($_FILES["membership"]["tmp_name"], $path_membership);
 
     $email = $_POST['email'];
     $fullname = $_POST['fullName'];
@@ -36,27 +36,18 @@ if ($conn->connect_errno) {
        </table>
         ';
     $instancemail = new PHPMailer;
-    $instancemail->SMTPOptions = array(
-      'ssl' => array(
-        'verify_peer' => false,
-        'verify_peer_name' => false,
-        'allow_self_signed' => true
-      )
-    );
-    $instancemail->isSMTP();                                      // Set mailer to use SMTP
-    $instancemail->Mailer = "smtp";
-    $instancemail->SMTPDebug  = 1;
-    $instancemail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
-    $instancemail->SMTPAuth = true;                               // Enable SMTP authentication
-    $instancemail->Username = 'director.ritiassociation@gmail.com';                 // SMTP username
-    $instancemail->Password = 'rehabilitation';                           // SMTP password
+    $instancemail->isSMTP();                                      // Set mailer to use SMTP	    $instancemail->SMTPOptions = array(
+    $instancemail->Host = 'mail.ritiassociation.or.ke';  // Specify main and backup SMTP servers	      'ssl' => array(
+    $instancemail->SMTPAuth = true;                               // Enable SMTP authentication	        'verify_peer' => false,
+    $instancemail->Username = 'application@ritiassociation.or.ke';                 // SMTP username	        'verify_peer_name' => false,
+    $instancemail->Password = 'RehabiliTitationRiti';                           // SMTP password	        'allow_self_signed' => true
     $instancemail->SMTPSecure = 'tls';
-    $instancemail->Port = 587;                                    // TCP port to connect to
+    $instancemail->Port = 465;                                    // TCP port to connect to	    $instancemail->isSMTP();                                      // Set mailer to use SMTP
 
+    $instancemail->Mailer = "smtp";
     $instancemail->setFrom($email, $fullname);
-    $instancemail->addAddress('chirchir7370@gmail.com');     // Add a recipient
-    // $instancemail->addAddress('director.ritiassociation@gmail.com');               // Name is optional
-    // $instancemail->addReplyTo('info@example.com', 'Information');
+    $instancemail->SMTPDebug  = 1;
+    $instancemail->addAddress('application@ritiassociation.or.ke');
 
 
     $instancemail->addAttachment($path_cv);         // Add attachments
@@ -76,7 +67,7 @@ if ($conn->connect_errno) {
       $sql = "INSERT INTO membership(
                 fullName, email, cv, membershipForm ) 
             values (
-                '$fullName', '$email',  '$path_cv', '$path_membership')";
+                '$fullname', '$email',  '$path_cv', '$path_membership')";
       $msg = "we have received your application";
       returnMessage($sql, $conn, $msg, $fullname);
     }

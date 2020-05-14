@@ -47,6 +47,14 @@ if ($conn->connect_errno) {
     $instancemail->Mailer = "smtp";
     $instancemail->setFrom($email, $fullname);
     $instancemail->SMTPDebug  = 1;
+    /* Disable some SSL checks. */
+    $instancemail->SMTPOptions = array(
+      'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+      )
+    );
     $instancemail->addAddress('application@ritiassociation.or.ke');
 
 

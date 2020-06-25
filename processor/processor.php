@@ -38,11 +38,11 @@ if ($conn->connect_errno) {
     $instancemail = new PHPMailer;
     $instancemail->isSMTP();                                      // Set mailer to use SMTP	    $instancemail->SMTPOptions = array(
     $instancemail->Host = 'mail.ritiassociation.or.ke';  // Specify main and backup SMTP servers	      'ssl' => array(
-    $instancemail->SMTPAuth = true;                               // Enable SMTP authentication	        'verify_peer' => false,
+    $instancemail->SMTPAuth = false;                               // Enable SMTP authentication	        'verify_peer' => false,
     $instancemail->Username = 'application@ritiassociation.or.ke';                 // SMTP username	        'verify_peer_name' => false,
-    $instancemail->Password = 'RehabiliTitationRiti';                           // SMTP password	        'allow_self_signed' => true
-    $instancemail->SMTPSecure = 'tls';
-    $instancemail->Port = 465;                                    // TCP port to connect to	    $instancemail->isSMTP();                                      // Set mailer to use SMTP
+    $instancemail->Password = 'VH:wg)0E1d9Ru2';                           // SMTP password	        'allow_self_signed' => true
+    $instancemail->SMTPSecure = false;
+    $instancemail->Port = 25;                                    // TCP port to connect to	    $instancemail->isSMTP();                                      // Set mailer to use SMTP
 
     $instancemail->Mailer = "smtp";
     $instancemail->setFrom($email, $fullname);

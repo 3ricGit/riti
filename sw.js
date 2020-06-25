@@ -1,62 +1,39 @@
-const cacheName = 'cache-v25';
+const cacheName = 'cache-v1';
 
 const filesToCache = [
-  '/',
-  'index.php',
-  'contact_us.php',
-  'apply.php',
-  'ventures.php',
-  '/about.php',
+  '404.php',
   'css/bootstrap.css',
   'css/fontawesome-all.css',
-  'css/swiper.css',
+  'offline.php',
   'css/magnific-popup.css',
   'css/styles.css',
-  'images/intro.jpeg',
-  'js/jquery.min.js',
-  'js/popper.min.js',
-  'js/bootstrap.min.js',
-  'js/jquery.easing.min.js',
-  'js/swiper.min.js',
-  'js/jquery.magnific-popup.js',
-  'js/morphext.min.js',
-  'js/isotope.pkgd.min.js',
-  'js/validator.min.js',
-  'js/scripts.js',
-  'images/work.jpeg',
-  'images/bgHeader.jpeg',
+  'css/swiper.css',
+  'images/final.png',
   'images/hexagon-green.svg',
-  'images/business.jpeg',
-  'images/down-arrow.png',
-  'webfonts/fa-solid-900.woff2',
-  'images/favicon.png',
-  'images/laboratory-clinic.jpg',
-  'images/physio9.jpg',
-  'images/construction.jpg',
-  'images/nurusing-home.jpeg',
-  'images/horticulture.jpg',
-  'images/uniform.jpg',
-  'images/img3.jpeg',
-  'images/medical%20clinic.jpg',
-  'images/food%20and%20diatetic.jpg',
-  'images/dental%20clinic.jpg',
-  'images/auto-garage.jpg',
-  'images/food%20supply.jpg',
-  'images/counselling%202.jpg',
-  'images/psychiatric.jpg',
-  'images/school-of-counselling.jpg',
-  'images/RITIBRONCHUREFINAL.jpg',
+  'js/bootstrap.min.js',
+  'js/isotope.pkgd.min.js',
+  'js/jquery.easing.min.js',
+  'js/jquery.magnific-popup.js',
+  'js/jquery.min.js',
+  'js/morphext.min.js',
+  'js/popper.min.js',
+  'js/pwa.js',
+  'js/scripts.js',
+  'js/swiper.min.js',
+  'js/validator.min.js',
+  'manifest.json',
   'images/RITILOGOFINAL(1).png',
-  '/images/marketing.jpg',
-  '/images/food.jpeg',
-  '/images/bg.jpg',
+  'images/bg.jpg',
+  'images/business.jpeg',
   'images/clear.jpg',
-  '/membershipForm.docx',
+  'images/down-arrow.png',
+  'images/favicon.png',
+  'images/work.jpeg',
+  'index.php',
 ];
 
-// service workers steps
-// install event
 self.addEventListener('install', (event) => {
+  console.log('Attempting to install service worker and cache static assets');
   self.skipWaiting();
   event.waitUntil(
     caches.open(cacheName).then((cache) => {
@@ -65,10 +42,10 @@ self.addEventListener('install', (event) => {
   );
 });
 
-// activate event
+// // activate event
 
 this.addEventListener('activate', function (event) {
-  var cachesToKeep = ['cache-v25'];
+  var cachesToKeep = ['cache-v1'];
 
   event.waitUntil(
     caches.keys().then(function (keyList) {
@@ -83,12 +60,28 @@ this.addEventListener('activate', function (event) {
   );
 });
 
-// fetch event
-
 self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches.match(event.request).then((cacheResponse) => {
-      return cacheResponse || fetch(event.request);
-    })
+    caches
+      .match(event.request)
+      .then((response) => {
+        if (response) {
+          return response;
+        }
+        console.log('Network request for ', event.request.url);
+        return fetch(event.request).then((response) => {
+          if (response.status === 404) {
+            return caches.match('404.php');
+          }
+          return caches.open(cacheName).then((cache) => {
+            cache.put(event.request.url, response.clone());
+            return response;
+          });
+        });
+      })
+      .catch((error) => {
+        console.log('Error, ', error);
+        return caches.match('offline.php');
+      })
   );
 });

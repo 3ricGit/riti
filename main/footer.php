@@ -81,12 +81,17 @@
 
 <script>
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', (event) => {
-        navigator.serviceWorker.register('/sw.js')
-            .catch(err => console.log('error occured ', err))
-    })
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js')
+            .then(swReg => {
+                console.log('Service Worker is registered', swReg);
+            })
+            .catch(err => {
+                console.error('Service Worker Error', err);
+            });
+    });
 }
-</script>
+</script>>
 
 
 <!-- Scripts -->

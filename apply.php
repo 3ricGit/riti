@@ -1,7 +1,5 @@
 <?php
-require './processor/processor.php';
-
-?>
+require './processor/processor.php';?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,12 +12,39 @@ require './processor/processor.php';
     <?php require './main/preloader.html'; ?>
     <?php require './main/navbar.php'; ?>
 
+
+
+
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-10 col-sm-12 mx-auto">
 
                 <div class="apply-now">
                     <h1 class="text-left"> Membership Application Process</h1>
+
+                    <?php 
+                            //  decaring variables
+                            $email = '';
+                            $fullname = '';
+                            $cv_path='';
+                            $membership_path = '';
+
+                            echo 'get data'. is_post_request();
+                           
+
+                        if (is_post_request()) {
+                            var_dump($_POST);
+                            echo 'post data'. is_post_request();
+                            $email =  $_POST['email'];
+                            $fullname =  clean_text($_POST['fullname']);
+                            echo 'chirchir';
+                            // $path = get_file_uload_folder() . basename($_FILES['cv']['name']);;
+                            echo 'email post is'.$_POST['email'];
+                            echo 'chirchir';
+                        }
+                            
+                            ?>
+
                     <ol class="mb-5">
                         <li>download the <a href="membership.pdf"><b>MEMBERSHIP FORM HERE <i
                                         class="fas fa-file-pdf"></i></b></a>
@@ -31,7 +56,7 @@ require './processor/processor.php';
                         </0l>
 
 
-                        <form method="post" action="<?php $_SERVER['PHP_SELF']; ?>"
+                        <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>"
                             class="shadow-lg p-3 mb-5 mt-5 bg-white rounded" enctype="multipart/form-data">
                             <?php if (isset($_SESSION['message'])) : ?>
                             <?php require './main/message.php'; ?>
@@ -39,10 +64,10 @@ require './processor/processor.php';
 
 
                             <div class="form-row row">
-                                <h1><?php echo $rrorMessage ?></h1>
+
                                 <div class="form-group col-md-6">
                                     <label for="fullname">fullname</label>
-                                    <input name="fullName" type="text" class="form-control" id="fullname"
+                                    <input name="fullname" type="text" class="form-control" id="fullname"
                                         placeholder="John Doe" required>
                                 </div>
                                 <div class="form-group col-md-6">

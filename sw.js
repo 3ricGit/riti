@@ -1,4 +1,4 @@
-const cacheName = 'cache-v1';
+const cacheName = 'cache-v2';
 
 const filesToCache = [
   '404.php',
@@ -45,7 +45,7 @@ self.addEventListener('install', (event) => {
 // // activate event
 
 this.addEventListener('activate', function (event) {
-  var cachesToKeep = ['cache-v1'];
+  var cachesToKeep = ['cache-v2'];
 
   event.waitUntil(
     caches.keys().then(function (keyList) {

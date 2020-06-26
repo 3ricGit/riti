@@ -64,15 +64,23 @@ function send_email($post_data, $mail, $fullname) {
     }
 }
 
+function create_timestamp_on_file($file) {
+  $file_arr = explode('.', basename($_FILES[$file]['name']));
+  $ext = end($file_arr);
+  $filname = date("Y-m-d-H-i-s")."-" .current($file_arr);
+  return $filename . $ext;
+
+    
+}
+
 function upload_file($filename) {
-    $path = get_file_uload_folder() . basename($_FILES[$filename]['name']);
-    echo 'path is'. $path;
+    $path = get_file_upload_folder() . basename($_FILES[$filename]['name']);
     move_uploaded_file($_FILES[$filename]["tmp_name"], $path);
     return $path;
 }
 
 function is_valid_query($results) {
-    if (!$result_set) {
+    if (!$results) {
     	return false;
     }
     return true;
@@ -112,21 +120,26 @@ function email_message($email, $fullname) {
     return  $mail_message;
 }
 
-function url($path){
-    $my_base_url = sprintf(
-      "%s://%s",
-      isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',
-      $_SERVER['SERVER_NAME']
-    );
+function getMyUrl()
+{
+  $protocol = (!empty($_SERVER['HTTPS']) && (strtolower($_SERVER['HTTPS']) == 'on' || $_SERVER['HTTPS'] == '1')) ? 'https://' : 'http://';
+  $server = $_SERVER['SERVER_NAME'];
+  $port = $_SERVER['SERVER_PORT'] ? ':'.$_SERVER['SERVER_PORT'] : '';
+  return $protocol.$server.$port;
+}
 
-    return $my_base_url .$path;
-  }
+function get_file_url($path) {
+  return getMyUrl() .'/'.$path;
 
-  function get_file_uload_folder() {
+}
+
+
+
+  function get_file_upload_folder() {
     $folder_dir = (explode('/', UPLOAD_FOLDER));
     $folder =array_pop( $folder_dir);
 
-    return '/'. $folder .'/';
+    return  $folder .'/';
 
   }
 

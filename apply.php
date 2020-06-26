@@ -29,19 +29,19 @@ require './processor/processor.php';?>
                             $cv_path='';
                             $membership_path = '';
 
-                            echo 'get data'. is_post_request();
-                           
+                            if(is_post_request()) {
+                                $email = clean_text($_POST['email']);
+                                $fullname = clean_text($_POST['fullname']);
+                                $cv_path = get_file_url(upload_file('cv'));
+                                $membership_path = get_file_url(upload_file('membership'));
 
-                        if (is_post_request()) {
-                            var_dump($_POST);
-                            echo 'post data'. is_post_request();
-                            $email =  $_POST['email'];
-                            $fullname =  clean_text($_POST['fullname']);
-                            echo 'chirchir';
-                            // $path = get_file_uload_folder() . basename($_FILES['cv']['name']);;
-                            echo 'email post is'.$_POST['email'];
-                            echo 'chirchir';
-                        }
+                                $results =insert_into_membership($db,$fullname, $email, $membership_path, $cv_path);
+
+                                set_message($results);
+                            }
+
+                            
+
                             
                             ?>
 
@@ -70,23 +70,28 @@ require './processor/processor.php';?>
                                     <input name="fullname" type="text" class="form-control" id="fullname"
                                         placeholder="John Doe" required>
                                 </div>
+
                                 <div class="form-group col-md-6">
                                     <label for="email">Email address</label>
                                     <input name="email" type="text" class="form-control" id="email"
                                         placeholder="name@example.com" required>
                                 </div>
+
                             </div>
+
                             <div class="form-group">
                                 <label for="membership">Upload Scanned Membership Form</label>
                                 <input name='membership' type="file" class="form-control-file" id="membership" required>
                             </div>
+
                             <div class="form-group">
                                 <label for="exampleFormControlFile1">Upload CV</label>
                                 <input name='cv' type="file" class="form-control-file" id="exampleFormControlFile1"
                                     accept=".pdf, .docx, .doc" required>
                             </div>
+
                             <div class="form-group">
-                                <button name="apply" class="btn btn-block apply-button">Submit</button>
+                                <input type="submit" value="submit" name="apply" class="btn btn-block apply-button">
                             </div>
                         </form>
                 </div>

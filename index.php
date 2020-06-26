@@ -381,19 +381,21 @@
                     <!-- Call Me Form -->
                     <form id="callMeForm" data-toggle="validator" data-focus="false">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="lname" name="lname" required>
-                            <label class="label-control" for="lname">Name</label>
+                            <label for="lname">Name</label>
+                            <input type="text" class="form-control-input" id="name" name="name" required>
+
                             <div class="help-block with-errors"></div>
                         </div>
+
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="lphone" name="lphone" required>
-                            <label class="label-control" for="lphone">Phone</label>
+                            <label for="lemail">Email</label>
+                            <input type="email" class="form-control-input" id="email" name="lemail" required>
                             <div class="help-block with-errors"></div>
                         </div>
+
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="lemail" name="lemail" required>
-                            <label class="label-control" for="lemail">Email</label>
-                            <div class="help-block with-errors"></div>
+                            <label for="message">Message</label>
+                            <textarea class="form-control-input" id="message" name="message" required></textarea>
                         </div>
 
 

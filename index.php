@@ -1,3 +1,6 @@
+<?php
+require './processor/processor.php';?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -378,8 +381,31 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
 
+                    <?php 
+                            //  decaring variables
+                            $email = '';
+                            $name = '';
+                            $message='';
+
+                            if(is_post_request()) {
+                                $email = clean_text($_POST['email']);
+                                $name = clean_text($_POST['name']);
+                                $message =clean_text($_POST['message']);
+
+                                $results =insert_into_contact($db,$name, $email, $message);
+
+                                set_message($results);
+                            }
+
+                            ?>
+
+                    <?php if (isset($_SESSION['message'])) : ?>
+                    <?php require './main/message.php'; ?>
+                    <?php endif ?>
+
                     <!-- Call Me Form -->
-                    <form id="callMeForm" data-toggle="validator" data-focus="false">
+                    <form id="callMeForm" data-toggle="validator" method="post"
+                        action="<?php echo $_SERVER['PHP_SELF'];?>" data-focus="false">
                         <div class="form-group">
                             <label for="lname">Name</label>
                             <input type="text" class="form-control-input" id="name" name="name" required>
@@ -389,7 +415,7 @@
 
                         <div class="form-group">
                             <label for="lemail">Email</label>
-                            <input type="email" class="form-control-input" id="email" name="lemail" required>
+                            <input type="email" class="form-control-input" id="email" name="email" required>
                             <div class="help-block with-errors"></div>
                         </div>
 

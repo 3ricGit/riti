@@ -108,7 +108,8 @@ require './processor/processor.php';?>
                         </div>
 
                         <div class="form-group">
-                            <button name="contact" type="submit" class="form-control-submit-button">SUBMIT
+                            <button name="contact" id="contactbtn" type="submit"
+                                class="form-control-submit-button">SUBMIT
                                 MESSAGE</button>
                         </div>
                         <div class="form-message">

@@ -80,17 +80,17 @@
 <!-- end of copyright -->
 
 <script>
-if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-        navigator.serviceWorker.register('sw.js')
-            .then(swReg => {
-                console.log('Service Worker is registered', swReg);
-            })
-            .catch(err => {
-                console.error('Service Worker Error', err);
-            });
-    });
-}
+// if ('serviceWorker' in navigator) {
+//     window.addEventListener('load', () => {
+//         navigator.serviceWorker.register('sw.js')
+//             .then(swReg => {
+//                 console.log('Service Worker is registered', swReg);
+//             })
+//             .catch(err => {
+//                 console.error('Service Worker Error', err);
+//             });
+//     });
+// }
 </script>>
 
 
@@ -106,3 +106,4 @@ if ('serviceWorker' in navigator) {
 <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
 <script src="js/scripts.js"></script> <!-- Custom scripts -->
 <script src="js/pwa.js"></script>
+<script src="js/data_process.js"></script> <!-- Custom scripts -->

@@ -394,17 +394,13 @@ require './processor/processor.php';?>
 
                                 $results =insert_into_contact($db,$name, $email, $message);
 
-                                set_message($results);
+                               
                             }
 
                             ?>
 
-                    <?php if (isset($_SESSION['message'])) : ?>
-                    <?php require './main/message.php'; ?>
-                    <?php endif ?>
-
                     <!-- Call Me Form -->
-                    <form id="callMeForm" data-toggle="validator" method="post"
+                    <form id="callusForm" data-toggle="validator" method="post"
                         action="<?php echo $_SERVER['PHP_SELF'];?>" data-focus="false">
                         <div class="form-group">
                             <label for="lname">Name</label>
@@ -426,7 +422,7 @@ require './processor/processor.php';?>
 
 
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Send</button>
+                            <button id="callusbtn" type="submit" class="form-control-submit-button">Send</button>
                         </div>
                         <div class="form-message">
                             <div id="lmsgSubmit" class="h3 text-center hidden"></div>

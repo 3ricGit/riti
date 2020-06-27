@@ -74,7 +74,7 @@ function create_timestamp_on_file($file) {
 }
 
 function upload_file($filename) {
-    $path = get_file_upload_folder() . basename($_FILES[$filename]['name']);
+    $path = get_file_upload_folder() . u(basename($_FILES[$filename]['name']));
     move_uploaded_file($_FILES[$filename]["tmp_name"], $path);
     return $path;
 }

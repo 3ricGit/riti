@@ -1,36 +1,6 @@
 const cacheName = 'cache-v5';
 
-const filesToCache = [
-  '404.php',
-  'css/bootstrap.css',
-  'css/fontawesome-all.css',
-  'offline.php',
-  'css/magnific-popup.css',
-  'css/styles.css',
-  'css/swiper.css',
-  'images/final.png',
-  'images/hexagon-green.svg',
-  'js/bootstrap.min.js',
-  'js/isotope.pkgd.min.js',
-  'js/jquery.easing.min.js',
-  'js/jquery.magnific-popup.js',
-  'js/jquery.min.js',
-  'js/morphext.min.js',
-  'js/popper.min.js',
-  'js/pwa.js',
-  'js/scripts.js',
-  'js/swiper.min.js',
-  'js/validator.min.js',
-  'manifest.json',
-  'images/RITILOGOFINAL(1).png',
-  'images/bg.jpg',
-  'images/business.jpeg',
-  'images/clear.jpg',
-  'images/down-arrow.png',
-  'images/favicon.png',
-  'images/work.jpeg',
-  'index.php',
-];
+const filesToCache = [];
 
 self.addEventListener('install', (event) => {
   console.log('Attempting to install service worker and cache static assets');
@@ -51,7 +21,7 @@ this.addEventListener('activate', function (event) {
     caches.keys().then(function (keyList) {
       return Promise.all(
         keyList.map(function (key) {
-          if (cachesToKeep.indexOf(key) === -1) {
+          if (cachesToKeep.indexOf(key) !== -1) {
             return caches.delete(key);
           }
         })
@@ -62,22 +32,12 @@ this.addEventListener('activate', function (event) {
 
 self.addEventListener('fetch', (event) => {
   event.respondWith(
-    caches
-      .match(event.request)
+    fetch(event.request)
       .then((response) => {
-        if (response) {
-          return response;
+        if (response.status === 404) {
+          return caches.match('404.php');
         }
-        console.log('Network request for ', event.request.url);
-        return fetch(event.request).then((response) => {
-          if (response.status === 404) {
-            return caches.match('404.php');
-          }
-          return caches.open(cacheName).then((cache) => {
-            cache.put(event.request.url, response.clone());
-            return response;
-          });
-        });
+        return response;
       })
       .catch((error) => {
         console.log('Error, ', error);

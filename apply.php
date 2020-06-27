@@ -58,7 +58,7 @@ require './processor/processor.php';?>
 
                         <form method="POST" action="<?php echo $_SERVER['PHP_SELF'];?>"
                             class="shadow-lg p-3 mb-5 mt-5 bg-white rounded" enctype="multipart/form-data">
-                            <?php if (isset($_SESSION['message'])) : ?>
+                            <?php if (!empty($_SESSION['message'])) : ?>
                             <?php require './main/message.php'; ?>
                             <?php endif ?>
 

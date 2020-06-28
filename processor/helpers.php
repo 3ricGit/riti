@@ -1,6 +1,14 @@
 <?php 
 
-require_once('phpMailer/PHPMailerAutoload.php');
+require(PROJECT_FOLDER .'/phpMailer/PHPMailerAutoload.php');
+
+function url_for($script_path) {
+  if($script_path[0] != '/') {
+      $script_path = '/'.$script_path;
+  }
+  return WWW_ROOT .  $script_path;
+}
+
 
 function clean_text($string){
     $string = trim($string);

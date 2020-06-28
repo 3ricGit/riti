@@ -1,5 +1,12 @@
 <?php
-require '../processor/processor.php';?>
+require '../processor/processor.php';
+
+$sql = "SELECT * FROM contact   ORDER BY id DESC";
+
+$results = mysqli_query($db, $sql);
+
+$counter = 0;
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,37 +32,39 @@ require '../processor/processor.php';?>
         </div>
         <div class="row mt-3">
             <div class="col-12 col-md-8 mx-auto">
-                <div class="table-responsive">
-                    <table class="table table-hover table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">FullName</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Message</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                <?php if(!$results):?>
+                <h1>No applications yet<h1>
+                        <?php exit ?>
+                        <?php endif?>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">FullName</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Message</th>
+                                        <th scope="col">action</th>
 
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php while($contact = mysqli_fetch_assoc($results)):?>
+                                    <?php $counter +=1?>
+                                    <tr>
+                                        <th scope="row"><?php echo $counter?></th>
+                                        <td><?php echo $contact['name']?></td>
+                                        <td><?php echo $contact['email']?></td>
+                                        <td><?php echo $contact['message']?></td>
 
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                        <td>reply</td>
 
+                                    </tr>
 
-                            </tr>
-
-                        </tbody>
-                    </table>
-                </div>
+                                    <?php endwhile?>
+                                </tbody>
+                            </table>
+                        </div>
 
             </div>
         </div>

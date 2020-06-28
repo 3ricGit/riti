@@ -1,5 +1,10 @@
 <?php
 require '../processor/processor.php';
+if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] !== true) {
+    redirect_to(url_for('login.php'));
+    exit;
+
+}
 
 $sql = "SELECT * FROM contact   ORDER BY id DESC";
 

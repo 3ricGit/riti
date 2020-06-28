@@ -1,6 +1,12 @@
 <?php
 require '../processor/processor.php';
 
+if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] !== true) {
+    redirect_to(url_for('login.php'));
+    exit;
+
+}
+
 $sql = "SELECT * FROM membership   ORDER BY id DESC";
 
 $results = mysqli_query($db, $sql);

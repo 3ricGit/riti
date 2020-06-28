@@ -28,12 +28,20 @@
 
             <!-- end of dropdown menu -->
 
-            <li class="nav-item">
-                <a class="nav-link page-scroll" href="<?php echo url_for('login.php')?>">LOGIN</a>
-            </li>
+            <?php if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true):?>
+
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="<?php echo url_for('logout.php')?>">LOGOUT</a>
             </li>
+            <?php else:?>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="<?php echo url_for('login.php')?>">LOGIN</a>
+            </li>
+
+            <?php endif?>
+
+
+
 
 
 

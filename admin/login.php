@@ -71,7 +71,9 @@ if(is_post_request()) {
                     </div>
                     <button type="submit" class="btn  btn-block btn-primary">Login</button>
                     <?php if ($error):?>
-                    <span><?php echo $error?></span>
+                    <div class="alert alert-danger" role="alert">
+                        <?php echo $error?>
+                    </div>
                     <?php endif?>
                 </form>
             </div>

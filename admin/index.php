@@ -1,6 +1,15 @@
 <?php
-session_destroy();
-require '../processor/processor.php';?>
+require '../processor/processor.php';
+
+$sql = "SELECT * FROM membership   ORDER BY id DESC";
+
+$results = mysqli_query($db, $sql);
+
+$counter = 0;
+
+
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -25,42 +34,44 @@ require '../processor/processor.php';?>
             </div>
         </div>
         <div class="row mt-3">
-            <div class="col-12 col-md-8 mx-auto">
-                <div class="table-responsive">
-                    <table class="table table-hover table-bordered">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">FullName</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">CV</th>
-                                <th scope="col">Membership Form</th>
-                                <th scope="col">action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>Otto</td>
-                                <td>reply</td>
+            <div class="col-12 col-md-10 mx-auto">
+                <?php if(!$results):?>
+                <h1>No applications yet<h1>
+                        <?php exit ?>
+                        <?php endif?>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">FullName</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">CV</th>
+                                        <th scope="col">Membership Form</th>
+                                        <th scope="col">action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
 
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>Otto</td>
-                                <td>reply</td>
+                                    <?php while($applicant = mysqli_fetch_assoc($results)):?>
+                                    <?php $counter +=1?>
+                                    <tr>
+                                        <th scope="row"><?php echo $counter?></th>
+                                        <td><?php echo $applicant['fullName']?></td>
+                                        <td><?php echo $applicant['email']?></td>
+                                        <td><a target="_blank" href="<?php echo $applicant['cv']?>">View CV</a></td>
+                                        <td><a target="_blank" href="<?php echo $applicant['membershipForm']?>">View
+                                                Membership Form</a>
+                                        </td>
+                                        <td>reply</td>
 
-                            </tr>
+                                    </tr>
 
-                        </tbody>
-                    </table>
-                </div>
+                                    <?php endwhile?>
+                                </tbody>
+                            </table>
+                        </div>
+
 
             </div>
         </div>

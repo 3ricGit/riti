@@ -10,7 +10,7 @@ if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] !== true) {
 $sql = "SELECT * FROM membership   ORDER BY id DESC";
 
 $results = mysqli_query($db, $sql);
-
+$rowcount=mysqli_num_rows($results);
 $counter = 0;
 
 
@@ -41,10 +41,9 @@ $counter = 0;
         </div>
         <div class="row mt-3">
             <div class="col-12 col-md-10 mx-auto">
-                <?php if(!$results):?>
-                <h1>No applications yet<h1>
-                        <?php exit ?>
-                        <?php endif?>
+                <?php if($rowcount<1):?>
+                <h1 class="h5 my-4">No applications yet<h1>
+                        <?php else: ?>
                         <div class="table-responsive">
                             <table class="table table-hover table-bordered">
                                 <thead>
@@ -77,6 +76,9 @@ $counter = 0;
                                 </tbody>
                             </table>
                         </div>
+
+                        <?php endif?>
+
 
 
             </div>

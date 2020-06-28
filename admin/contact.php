@@ -9,6 +9,7 @@ if(!isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] !== true) {
 $sql = "SELECT * FROM contact   ORDER BY id DESC";
 
 $results = mysqli_query($db, $sql);
+$rowcount=mysqli_num_rows($results);
 
 $counter = 0;
 ?>
@@ -37,8 +38,8 @@ $counter = 0;
         </div>
         <div class="row mt-3">
             <div class="col-12 col-md-8 mx-auto">
-                <?php if(!$results):?>
-                <h1>No applications yet<h1>
+                <?php if(!$rowcount):?>
+                <h1 class="h5 my-4">No messages yet<h1>
                         <?php exit ?>
                         <?php endif?>
                         <div class="table-responsive">

@@ -15,13 +15,13 @@
                     <h4>Links</h4>
                     <ul class="list-unstyled li-space-lg white">
                         <li>
-                            <a class="white" href="#your-link">startupguide.com</a>
+                            <a class="white" href="#">startupguide.com</a>
                         </li>
                         <li>
-                            <a class="white" href="terms-conditions.html">Terms & Conditions</a>
+                            <a class="white" href="#">Terms & Conditions</a>
                         </li>
                         <li>
-                            <a class="white" href="privacy-policy.html">Privacy Policy</a>
+                            <a class="white" href="#">Privacy Policy</a>
                         </li>
                     </ul>
                 </div> <!-- end of text-container -->

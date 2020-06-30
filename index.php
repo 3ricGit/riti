@@ -28,7 +28,7 @@ require './processor/processor.php';?>
         <div class="header-content">
             <div class="container mobile">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-md-12">
                         <div class="text-container">
                             <h1>RITI <span id="js-rotating">Association of Unemployed Professionals</span></h1>
                             <p class="p-heading p-large">
@@ -47,14 +47,17 @@ require './processor/processor.php';?>
 
 
         <!-- desktop -->
-        <div class="logo-container">
-            <div class="logo-image-center">
-                <img src="./images/RITILOGOFINAL(1).png" alt="logo" class="logo-image">
-
-            </div>
-            <div class="discover-btn">
-                <a class="btn-solid-lg page-scroll" href="#intro">DISCOVER</a>
-            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center pt-5">
+                    <div class="text-container desktop d-flex justify-content-center flex-column">
+                        <h1 class="text-center"><span class="riti-header">RITI</span> Association <br> <span
+                                class="smaller">of Unemployed
+                                Professionals</span></h1>
+                        <a class="btn-solid-lg page-scroll mx-auto d-inline-block" href="#intro">DISCOVER</a>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
         </div>
     </header> <!-- end of header -->
     <!-- end of header -->
@@ -95,7 +98,7 @@ require './processor/processor.php';?>
                         <div class="card-body">
                             <h4 class="card-title text-center">Business Enterprises</h4>
                             <p>RITI provides business avenues awaiting ready and energetic professionals to act as
-                                directors. RITI business enterprises accommodate all professionals from various domains
+                                directors.RITI business enterprises accommodate all professionals from various domains.
                             </p>
                         </div>
                     </div>
@@ -136,8 +139,9 @@ require './processor/processor.php';?>
                         </span>
                         <div class="card-body">
                             <h4 class="card-title text-center">Counselling</h4>
-                            <p>RITI association provides counseling sessions that include group counselling, individual
-                                therapy and personalized counselling that focus on specific problems</p>
+                            <p>RITI association provides counseling sessions that include group counseling, individual
+                                therapy,
+                                and personalized counseling that focus on specific problems.</p>
                         </div>
                     </div>
                     <!-- end of card -->
